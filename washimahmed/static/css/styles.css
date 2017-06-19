@@ -113,7 +113,7 @@ iframe {
 */
 /* ======= Header ======= */
 .bgheader{
-    background: url('/static/assets/images/data-img.png');
+    background: url('/static/images/data-img.png');
     height: 220px;
     position: absolute;
     width: 100%;

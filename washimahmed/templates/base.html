@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{% block title %}Washim Ahmed{% endblock title %}</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="9+ years of over-all IT experience with over 6+ years of experience in data reporting platform in dierent open
+source framework and 3+ years in Data analysis. Well rounded, visionary ecutive with broad spectrum of data science knowledge. As the next opportunities I am seeking role for senior level assignments in Data Science with
+an organization of repute.">
+        <meta name="author" content="Washim Ahmed">
+        <link rel="shortcut icon" href="/static/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+        <!-- Global CSS -->
+        <link rel="stylesheet" href="/static/assets/plugins/bootstrap/css/bootstrap.min.css">
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="/static/assets/plugins/font-awesome/css/font-awesome.css">
+        <!-- Theme CSS -->  
+        <link id="theme-style" rel="stylesheet" href="/static/assets/css/styles.css">
+        <link id="theme-style" rel="stylesheet" href="/static/assets/css/topnav.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <div class="container">
+                <a class="active" href="/">Home</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+        <header class="header">
+            <div class="bgheader"></div>
+            <div class="container">                       
+                <div class="profile-content pull-left">
+                    <h1 class="name">Washim Ahmed</h1>
+                    <h2 class="desc">Data Science Executive(PGDDS)</h2>
+                    <ul class="social list-inline">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+                        <li class="last-item"><a href="#"><i class="fa fa-hacker-news"></i></a></li>
+                    </ul> 
+                </div>
+            </div>
+        </header>
+        <div class="container sections-wrapper">
+            {% block body %}{% endblock %}
+        </div>
+        <footer class="footer">
+            <div class="container text-center">
+                <small class="copyright">All rights reserved by Washim Ahmed.</small>
+            </div>
+        </footer>
+        <!-- Javascript -->          
+        <script type="text/javascript" src="/static/assets/plugins/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="/static/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        $('.level-bar-inner').css('width', '0');
+        $(window).on('load', function() {
+            $('.level-bar-inner').each(function() {
+                var itemWidth = $(this).data('level');
+                $(this).animate({
+                    width: itemWidth
+                }, 800);
+            });
+        });
+        </script>
+    </body>
+</html>

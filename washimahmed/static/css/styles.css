@@ -179,6 +179,7 @@ iframe {
 .section .section-inner {
   background: #fff;
   padding: 30px;
+  border-radius: 4px;
 }
 .section .heading {
   margin-top: 0;
